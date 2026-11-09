@@ -51,7 +51,10 @@ fun TextCell(text: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    Row(modifier.size(width = 400.dp, height = 200.dp)) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = modifier.size(width = 400.dp, height = 200.dp)
+    ) {
         TextCell("1")
         TextCell("2")
         TextCell("3")
